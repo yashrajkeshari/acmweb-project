@@ -1,0 +1,134 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;padding: 0;
+}
+.bar{
+    align-items: center;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    color: rgb(255, 230, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.port{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    /* grid-gap: 2px; */
+    background-image: url("./pics/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 110vh;
+}
+pre{
+    overflow: hidden;
+    font-size:2rem;
+    grid-row: 4/6;
+    grid-column:2/4;
+}
+h3{
+    grid-row: 10/11;
+    grid-column: 3/8; 
+}
+.intro{
+    grid-row: 6/8;
+    grid-column: 3/8;
+}
+.def{
+    overflow: hidden;
+    font-size:2rem;
+    grid-row: 1/4;
+    grid-column: 1/7;
+}
+.img-fluid{
+    border-radius:10% 10% 20% 50%;
+    grid-column: 8/10;
+    grid-row: 2/5;
+}
+footer{
+
+    width: 100vw;
+}
+
+@media(max-width:910px) and (min-width:710px){
+        .port{
+            height: 120vh;
+        }
+        .def{
+            font-size: 1.5rem;
+        }
+    }
+@media(max-width:710px) and (min-width:570px){
+    .port{
+        height: 120vh;
+    }
+    .def{
+        font-size: 1rem;
+    }
+    .bar{
+        height: auto;
+        flex-direction:column;
+        flex-wrap: nowrap;
+    }
+    .intro{
+        grid-row: 3/8;
+    grid-column: 3/8;}
+    .pre{
+        grid-row: 2/4;
+        grid-column:2/4;
+        font-size:1rem; 
+        
+    }
+}
+@media(max-width:570px) and (min-width:470px) {
+    .port{
+        height: 130vh;
+    }
+    .def{
+        font-size: 1rem;
+    }
+    .intro{
+        grid-row: 4/8;
+    grid-column: 3/8;
+    }
+    .pre{
+        grid-row: 2/4;
+        grid-column:2/4;
+        font-size:1rem; 
+         
+    }
+    .bar{
+        height: auto;
+        flex-direction:column;
+        flex-wrap: nowrap;
+      
+    }
+   
+}
+@media(max-width:470px){
+     .port{
+        height: 150vh;
+    } 
+    .def{
+        font-size: .8rem;
+    }
+    .intro{
+        grid-row: 3/7;
+    grid-column: 3/8;
+    }
+    .pre{
+        grid-row: 2/3;
+        grid-column:1/3;
+        font-size:1rem; 
+    }
+    .bar{
+        height: auto;
+        flex-direction:column;
+        flex-wrap: nowrap;
+    } 
+}
